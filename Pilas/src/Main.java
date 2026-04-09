@@ -1,5 +1,3 @@
-import java.util.Stack;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("********Ejercicio Balanceo de Paréntesis*************");
@@ -25,6 +23,7 @@ public class Main {
         CallStack pila = new CallStack();
         pila.InicializarPila();
 
+
         String funcion1 = "main()";
         System.out.println("Apilo: " + funcion1);
         pila.Apilar(funcion1);
@@ -49,6 +48,21 @@ public class Main {
 
         System.out.println("Desapilo: " + pila.Tope());
         pila.Desapilar();
+
+        System.out.println("--------------------------------------");
+        System.out.println("********Ejercicio ReversionString*************");
+
+        ReversionStrings reversor = new ReversionStrings();
+
+        String palabra = "ALGORITMOS";
+
+        System.out.println("Palabra a invertir: " + palabra);
+
+        String resultado = reversor.revertirstring(palabra);
+
+        System.out.println("Invertida: " + resultado);
+
+
 
 
 
