@@ -5,13 +5,13 @@ public class Main2 {
         bufet.InicializarCola();
 
         System.out.println("********Buffet de la Facultad********");
-        System.out.println("Llegan a la fila!!");
+        System.out.println("Llega una persona a la fila!!");
         bufet.Acolar(1);
         System.out.println("Persona 1 se pone en la fila");
-        System.out.println("Llegan a la fila!!");
+        System.out.println("Llega una persona a la fila!!");
         bufet.Acolar(2);
         System.out.println("Persona 2 se pone en la fila");
-        System.out.println("Llegan a la fila!!");
+        System.out.println("Llega una persona a la fila!!");
         bufet.Acolar(3);
         System.out.println("Persona 3 se pone en la fila");
         //se atiende al primero que llego
