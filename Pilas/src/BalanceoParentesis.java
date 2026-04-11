@@ -36,17 +36,12 @@ public class BalanceoParentesis implements PilaTDA<Character> {
     }
 
     public boolean estaBalanceado(String expresion) {
-
         InicializarPila();
-
         for (int i = 0; i < expresion.length(); i++) {
-
             char c = expresion.charAt(i);
-
             if (c == '(') {
                 Apilar(c);
             }
-
             if (c == ')') {
                 if (PilaVacia()) {
                     return false;
@@ -54,7 +49,6 @@ public class BalanceoParentesis implements PilaTDA<Character> {
                 Desapilar();
             }
         }
-
         return PilaVacia();
     }
 }
