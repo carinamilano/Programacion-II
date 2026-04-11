@@ -4,7 +4,7 @@ public class Main2 {
         BuffetFacu bufet = new BuffetFacu();
         bufet.InicializarCola();
 
-        System.out.println("********Buffet de la Facultad********");
+        System.out.println("**********Buffet de la Facultad********");
         System.out.println("Llega una persona a la fila!!");
         bufet.Acolar(1);
         System.out.println("Persona 1 se pone en la fila");
