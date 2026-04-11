@@ -5,7 +5,7 @@ public class Main3 {
         fila.InicializarColaPrioridad();
 
         // Acolamos 3 personas
-        System.out.println("Llegan al banco:  \n persona 1 (prioridad 1) / persona 2 (prioridad 5) / persona 3 (prioridad 10)");
+        System.out.println("Llegan al banco:  \npersona 1 (prioridad 1) / persona 2 (prioridad 5) / persona 3 (prioridad 10)");
         fila.AcolarPrioridad(1, 1);
         fila.AcolarPrioridad(2, 5);
         fila.AcolarPrioridad(3, 10); //la persona que llego 3era es la de mayor prioridad
