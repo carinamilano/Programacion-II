@@ -50,7 +50,7 @@ public class Main {
         pila.Desapilar();
 
         System.out.println("--------------------------------------");
-        System.out.println("********Ejercicio ReversionString*************");
+        System.out.println("********Ejercicio ReversionString****************");
 
         ReversionStrings reversor = new ReversionStrings();
 
