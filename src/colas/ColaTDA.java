@@ -1,3 +1,5 @@
+package colas;
+
 public interface ColaTDA {
     void InicializarCola();
     void Acolar (int x);

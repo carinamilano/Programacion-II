@@ -1,4 +1,6 @@
-public class Main3 {
+package colasconprioridad;
+
+public class MainColasPrioridad {
     public static void main(String[] args) {
 
         FilaCajero fila = new FilaCajero();

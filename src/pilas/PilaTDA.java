@@ -1,3 +1,5 @@
+package pilas;
+
 public interface PilaTDA<T> {
 
     void InicializarPila();

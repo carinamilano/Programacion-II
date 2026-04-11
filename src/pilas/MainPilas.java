@@ -1,4 +1,6 @@
-public class Main {
+package pilas;
+
+public class MainPilas {
     public static void main(String[] args) {
         System.out.println("********Ejercicio Balanceo de Paréntesis*************");
 

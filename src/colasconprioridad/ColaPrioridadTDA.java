@@ -1,3 +1,5 @@
+package colasconprioridad;
+
 public interface ColaPrioridadTDA {
     void InicializarColaPrioridad();
     void AcolarPrioridad(int numero, int prioridad);

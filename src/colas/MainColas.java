@@ -1,4 +1,6 @@
-public class Main2 {
+package colas;
+
+public class MainColas {
     public static void main(String[] args) {
 
         BuffetFacu bufet = new BuffetFacu();

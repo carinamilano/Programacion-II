@@ -1,3 +1,5 @@
+package colasconprioridad;
+
 public class FilaCajero implements ColaPrioridadTDA{
 
     private int cantidad;

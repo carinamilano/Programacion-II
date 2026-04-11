@@ -1,3 +1,5 @@
+package colas;
+
 public class BuffetFacu implements ColaTDA{
 
     private static final int MAX = 100;
