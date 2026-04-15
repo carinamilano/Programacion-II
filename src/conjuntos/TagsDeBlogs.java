@@ -1,6 +1,6 @@
 package conjuntos;
 
-public class TagsDeBlogs implements Conjuntos{
+public class TagsDeBlogs implements ConjuntoTDA<String>{
 
     private static final int MAX = 100;
     private String[] datos;

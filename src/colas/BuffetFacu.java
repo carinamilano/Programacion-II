@@ -1,6 +1,6 @@
 package colas;
 
-public class BuffetFacu implements ColaTDA{
+public class BuffetFacu implements ColaTDA<Integer>{
 
     private static final int MAX = 100;
     private int[] datos;
@@ -31,7 +31,7 @@ public class BuffetFacu implements ColaTDA{
         }
     }
     @Override
-    public int Primero(){
+    public Integer Primero(){
         return datos[0];
     }
 

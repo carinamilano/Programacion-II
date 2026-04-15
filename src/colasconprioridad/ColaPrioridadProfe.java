@@ -1,16 +1,10 @@
 package colasconprioridad;
 
-public interface ColaPrioridadTDA<T> {
-
+public interface ColaPrioridadProfe {
     void InicializarColaPrioridad();
-
-    void AcolarPrioridad(T numero, int prioridad);
-
+    void AcolarPrioridad(int numero, int prioridad);
     void Desacolar();
-
     boolean ColaVacia();
-
-    T Primero();
-
+    int Primero();
     int Prioridad();
 }

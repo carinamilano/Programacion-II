@@ -1,6 +1,6 @@
 package conjuntos;
 
-public interface Conjuntos {
+public interface ConjuntosProfe {
     void InicializarConjunto();
     void Agregar(String x);
     void Sacar(String x);
