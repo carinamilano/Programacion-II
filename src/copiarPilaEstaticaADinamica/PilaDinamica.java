@@ -1,8 +1,8 @@
 package copiarPilaEstaticaADinamica;
 
-import pilas.PilaTDA;
+import pilasgenericas.PilaGenerica;
 
-public class PilaDinamica implements PilaTDA<Integer> {
+public class PilaDinamica implements PilaGenerica<Integer> {
 
     private Node tope; // apunta al nodo que está en el tope de la pila
 

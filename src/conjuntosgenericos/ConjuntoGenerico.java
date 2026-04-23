@@ -1,6 +1,6 @@
-package conjuntos;
+package conjuntosgenericos;
 
-public interface ConjuntoTDA<T> {
+public interface ConjuntoGenerico<T> {
     void InicializarConjunto();
     void Agregar(T valorAAgregar);
     void Sacar(T valorASacar);

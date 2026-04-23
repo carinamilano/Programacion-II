@@ -1,4 +1,4 @@
-package colasconprioridad;
+package colasconprioridadgenerica;
 
 public class MainColasPrioridad {
     public static void main(String[] args) {

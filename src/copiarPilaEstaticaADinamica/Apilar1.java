@@ -1,8 +1,8 @@
 package copiarPilaEstaticaADinamica;
 
-import pilas.PilaTDA;
+import pilasgenericas.PilaGenerica;
 
-public class Apilar1 implements PilaTDA<Integer>{
+public class Apilar1 implements PilaGenerica<Integer> {
 
     private static final int MAX = 100;
     private int[] datos;

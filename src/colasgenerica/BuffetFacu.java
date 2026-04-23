@@ -1,6 +1,6 @@
-package colas;
+package colasgenerica;
 
-public class BuffetFacu implements ColaTDA<Integer>{
+public class BuffetFacu implements ColaGenerica<Integer> {
 
     private static final int MAX = 100;
     private int[] datos;

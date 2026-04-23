@@ -1,6 +1,6 @@
-package colas;
+package colasgenerica;
 
-public interface ColaTDA<T> {
+public interface ColaGenerica<T> {
     void InicializarCola();
     void Acolar(int x);
     void Desacolar();

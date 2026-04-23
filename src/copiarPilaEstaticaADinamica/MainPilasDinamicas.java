@@ -1,14 +1,14 @@
 package copiarPilaEstaticaADinamica;
 
-import pilas.PilaTDA;
+import pilasgenericas.PilaGenerica;
 
 public class MainPilasDinamicas {
     public static void main(String[] args) {
 
         //Pilas
-        PilaTDA<Integer> pilaEstatica = new Apilar1();
-        PilaTDA<Integer> pilaAux = new Apilar1();
-        PilaTDA<Integer> pilaDinamica = new PilaDinamica();
+        PilaGenerica<Integer> pilaEstatica = new Apilar1();
+        PilaGenerica<Integer> pilaAux = new Apilar1();
+        PilaGenerica<Integer> pilaDinamica = new PilaDinamica();
 
         //Inicializamos
         pilaEstatica.InicializarPila();

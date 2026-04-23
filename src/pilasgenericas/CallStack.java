@@ -1,4 +1,4 @@
-package pilas;
+package pilasgenericas;
 /*Pila de Llamadas (Call Stack): Cuando una función llama a otra.
 o Consigna: Si Main() llama a CalcularPromedio() y esta llama a
 Sumar(), ¿quién está en el Tope() en el momento de la ejecución de
@@ -6,7 +6,7 @@ la suma?
 main llama a calcularproemdio, y esta llama a sumar
 */
 
-public class CallStack implements PilaTDA<String> {
+public class CallStack implements PilaGenerica<String> {
 
     private static final int MAX=100;
     private int cantidad=0;

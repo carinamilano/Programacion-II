@@ -1,6 +1,6 @@
-package pilas;
+package pilasgenericas;
 
-public class BalanceoParentesis implements PilaTDA<Character> {
+public class BalanceoParentesis implements PilaGenerica<Character> {
 
     private static final int MAX = 100;
     private int cantidad = 0;

@@ -1,4 +1,4 @@
-package conjuntos;
+package conjuntosgenericos;
 
 public class MainConjuntos {
     public static void main (String[] args){

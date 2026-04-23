@@ -1,4 +1,4 @@
-package pilas;
+package pilasgenericas;
 
 public class MainPilas {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package pilas;
+package pilasgenericas;
 
-public class ReversionStrings implements PilaTDA<Character> {
+public class ReversionStrings implements PilaGenerica<Character> {
 
     private static final int MAX = 100;
     private char[] pila;

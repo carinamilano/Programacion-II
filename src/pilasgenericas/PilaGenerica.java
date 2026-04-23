@@ -1,6 +1,6 @@
-package pilas;
+package pilasgenericas;
 
-public interface PilaTDA<T> {
+public interface PilaGenerica<T> {
 
     void InicializarPila();
 

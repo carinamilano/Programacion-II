@@ -1,6 +1,6 @@
-package conjuntos;
+package conjuntosgenericos;
 
-public class Legajos implements ConjuntoTDA <Integer>{
+public class Legajos implements ConjuntoGenerico<Integer> {
 
     private static final int MAX = 100;
     private int[] datos;

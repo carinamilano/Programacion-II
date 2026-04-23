@@ -1,6 +1,6 @@
-package colasconprioridad;
+package colasconprioridadgenerica;
 
-public interface ColaPrioridadTDA<T> {
+public interface ColaPrioridadGenerica<T> {
 
     void InicializarColaPrioridad();
 

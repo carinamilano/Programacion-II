@@ -1,4 +1,4 @@
-package colas;
+package colasgenerica;
 
 public class MainColas {
     public static void main(String[] args) {

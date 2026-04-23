@@ -1,6 +1,6 @@
-package colasconprioridad;
+package colasconprioridadgenerica;
 
-public class FilaCajero implements ColaPrioridadTDA<Integer>{
+public class FilaCajero implements ColaPrioridadGenerica<Integer> {
 
     private int cantidad;
     private int[] datos;
@@ -18,6 +18,8 @@ public class FilaCajero implements ColaPrioridadTDA<Integer>{
     @Override
     public void AcolarPrioridad(Integer numero , int prioridad){
         if (cantidad<MAX){
+
+
             int i=cantidad-1;
             while (i >= 0 && prioridades[i] < prioridad) {
                 prioridades[i+1]=prioridades[i];
