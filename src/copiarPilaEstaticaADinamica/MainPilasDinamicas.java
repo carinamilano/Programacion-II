@@ -39,7 +39,7 @@ public class MainPilasDinamicas {
         }
 
         System.out.println("Pila auxiliar desapilada en pila Dinamica!!!!!");
-
+        // ----------------------------------------------------------------------
         // Mostrar resultado final
         System.out.println("Contenido de la pila dinámica:");
 
