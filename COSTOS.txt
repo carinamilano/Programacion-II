@@ -1,0 +1,92 @@
+EJERCICIO 1: Análisis de ciclos anidados con condición
+Determiná la familia de complejidad temporal del siguiente método en el peor caso. Justificá analizando el comportamiento de los índices.
+public static int buscarYValidar(int[] array) {     
+    for(int i = 0; i < array.length; i++) {      //O(n)
+        if(array[i] == 5) {                      //O(1)
+            return i;                            //O(1)
+        } else {
+            for(int j = 0; j < i; j++) {         //O(n)
+                if(array[j] == 6) return i;      //O(1)
+            }
+        }
+    }
+    return -1;   //O(1)
+}   COSTO TOTAL O(n) + O(n) = O(n)
+
+EJERCICIO 2: Comparativa de "Fierros" (TDAs Estáticos)
+Analizá la operación Acolar(x) en:
+1.ColaPU (Estática): El nuevo elemento va siempre a la posición 0. //O(n)
+2.ColaPI (Estática): El nuevo elemento va al final del arreglo.    //O(1)
+3.ColaLD (Dinámica): Usa nodos con punteros al primero y último. Indica el costo temporal para cada una y justifica por qué la implementación estática "PU" es distinta a las demás. //O(1)
+
+EJERCICIO 3: El algoritmo integrador filtrar
+Un método recibe una Cola de n elementos, extrae todos para identificar los mayores a un "límite" (guardándolos en una cola nueva) y luego restaura la original volcando los datos desde una estructura auxiliar tmp. Determina: (a) Complejidad temporal O(n) y (b) Complejidad espacial O(n).
+// o(n) El algoritmo recorre la cola original de n elementos una vez para:
+
+- desencolar cada elemento
+- comparar si es mayor al límite
+- guardar el elemento en una cola auxiliar tmp
+- guardar los mayores en una nueva cola resultado
+
+Ese primer recorrido cuesta:O(n)
+Después vuelve a recorrer tmp para restaurar la cola original: O(n)
+
+Como los ciclos son secuenciales, se suman:O(n) + O(n) = O(2n)
+
+Y en Big-O se descarta la constante:O(n) 
+
+EJERCICIO 4: Regla de la Suma (Código Secuencial)
+Analizá el siguiente método y determiná su familia de complejidad desglosando el costo de cada bloque independiente.
+public static void procesoMisterioso(int[] arreglo) {
+    int n = arreglo.length; //O(1)
+    System.out.println("Inicio"); //O(1)
+    for (int i = 0; i < n; i++) { arreglo[i] *= 2; } O(n)
+    for (int j = 0; j < n; j++) { System.out.println(arreglo[j]); } O(n)
+Costo total:
+O(1) + O(1) + O(n) + O(n)
+= O(2n)
+= O(n)
+
+EJERCICIO 5: Regla del Producto (Matrices)
+Analizá la complejidad de recorrer una matriz cuadrada n X n para buscar un número par. Identificá el peor caso. el peor caso es que no este o que este en la ultima posición y tiene que recorrer toda la matriz. costo O(n2)
+
+EJERCICIO 6: Jerarquía de Dominancia
+Determiná la familia de complejidad total del siguiente bloque de código aplicando las reglas de simplificación.
+public static void procesoMezclado(int[] datos) {
+    int n = datos.length; O(1)
+    // Bloque A: Bucle simple 
+    for (int i = 0; i < n; i++) { System.out.println(datos[i]); } O(n)
+    // Bloque B: Bucles anidados
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) { datos[i] += datos[j]; } O(n)*O(n)= O(n2) costo total
+    }
+}
+
+EJERCICIO 7: Divide y Vencerás 
+Explicá matemáticamente por qué la Búsqueda Binaria sobre un arreglo ordenado de n elementos pertenece a la familia O(log n). Utilizá el concepto de divisiones sucesivas de la tanda de datos. 
+
+///La búsqueda binaria pertenece a la familia O(log n) porque en cada iteración divide el conjunto de datos a la mitad. 
+
+Si inicialmente hay n elementos, luego quedan n/2, después n/4, n/8, y así sucesivamente hasta llegar a 1 elemento.
+
+Por lo tanto, la cantidad de pasos crece de manera logarítmica y la complejidad temporal es O(log n).
+
+EJERCICIO 8: El costo oculto del TDA Conjunto
+Se desea calcular la intersección de dos Conjuntos (A y B) de tamaño n cada uno usando implementaciones estáticas. El algoritmo recorre A y por cada elemento llama a B.Pertenece(x). Si es true, lo agrega a un conjunto resultado usando Agregar(x). ¿Cuál es la complejidad temporal real considerando las validaciones internas del TDA?.
+//La complejidad temporal real es O(n²). Aunque el algoritmo recorre A una sola vez, por cada elemento llama a B.Pertenece(x), que en una implementación estática con arreglo cuesta O(n), ya que puede requerir recorrer todo el conjunto B. Además, si el elemento pertenece, se llama a resultado.Agregar(x), que también puede costar O(n) porque debe validar que el elemento no esté repetido. Por lo tanto, el costo total es n * (O(n) + O(n)), que se simplifica como O(n²).
+
+EJERCICIO 9: Parámetros múltiples (Cola con Prioridad)
+Analizá la operación Desacolar() en una Cola con Prioridad implementada con K subcolas. Justificá por qué su complejidad es O(K) y por qué se dice que es independiente de la cantidad total de elementos n.
+La complejidad de Desacolar() en una Cola con Prioridad implementada con K subcolas es O(K), porque en el peor caso el método debe recorrer las K subcolas para encontrar la primera subcola no vacía correspondiente a la prioridad más alta. Una vez encontrada, quitar el elemento de esa subcola cuesta O(1).
+
+Se dice que es independiente de n porque el algoritmo no recorre la cantidad total de elementos almacenados, sino la cantidad de prioridades o subcolas existentes. Por eso el costo depende de K y no de n.
+EJERCICIO 10: Análisis de algoritmo con recursión doble
+Dada la implementación recursiva de Fibonacci:
+public static int fibonacci(int n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+La complejidad temporal es O(2ⁿ) porque cada llamada recursiva genera dos nuevas llamadas, formando un árbol de recursión exponencial con muchas repeticiones de cálculos.
+La complejidad espacial es O(n) debido a la profundidad máxima de la pila de recursión.
+
